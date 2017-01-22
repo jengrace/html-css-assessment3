@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+    <title>Application Form</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- your html goes here -->
+  <h1>Application Form</h1>
+
+  <h3 class="instructions">Please fill out every section of the job application form below. You may click directly on each question to select the box you wish to fill out.
+  </h3>
+
+  <form action="/application-success" method="POST">
+
+    <label for="firstname">What is your first name?</label>
+    <input id="firstname" type="text" name="firstname">
+    
+    <br>
+    <br>
+
+    <label for="lastname">What is your last name?</label>
+    <input id="lastname" class="lastnamebold" type="text" name="lastname">
+    
+    <br>
+    <br>
+
+    <label for="salaryreq">Enter your salary requiremenet as a number: </label>
+    <input id="salaryreq" type="text" name="salaryreq">
+    
+    <br>
+    <br>
+
+    <label for="jobtype">Which job are you applying for?</label>
+    <select id="jobtype" name="jobtype">
+      <option value="softwareengineer">Software Engineer</option>
+      <option value="qaengineer">QA Engineer</option>
+      <option value="productmanager">Product Manager</option>
+    </select>
+
+    <br>
+    <br>
+
+    <input type="submit" name="submit" value="Submit">
+  </form>
+</body>
+</html>
